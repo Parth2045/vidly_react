@@ -12,7 +12,7 @@ function App() {
   // HOOK: useRef // Returns a mutable ref object that holds the .current property.
   const passwordRef = useRef(null);
 
-  // HOOK: useCallback // Prevents unnecessary re-renders, only runs when dependencies values got affected
+  // HOOK: useCallback // Prevents unnecessary re-renders, only runs when dependencies values got affected/Changed
   const generatePassword = useCallback(() => {
     let pass = '';
     let str = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
