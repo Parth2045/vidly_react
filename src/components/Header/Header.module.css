@@ -1,0 +1,48 @@
+header {
+    background-color: #f8f8f8;
+    padding: 10px 20px;
+}
+
+ul.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+ul.menu li a {
+    text-decoration: none;
+}
+
+ul.menu li a.active {
+    color: red;
+}
+
+.leftMenu {
+    margin-right: auto; /* Align the first item to the left */
+}
+
+.rightMenu {
+    margin-left: auto; /* Align the last item to the right */
+}
+
+.menu li {
+    padding: 10px 20px;
+}
+
+.menu li:not(.leftMenu):not(.rightMenu) {
+    flex-grow: 1;
+    text-align: center;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+    ul.menu {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .leftMenu, .rightMenu {
+        margin: 0;
+    }
+}
