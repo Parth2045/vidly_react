@@ -8,7 +8,7 @@ import Home from './components/Home/Home.tsx'
 import Genres from './components/Genres/Genres.tsx'
 import Movies from './components/Movies/Movies.tsx'
 import Login from './components/Login/Login.tsx'
-import Register from './components/Register/Register.js'
+import Register from './components/Register/Register.tsx'
 import NotFound from './components/NotFound/NotFound.tsx'
 import GenreMovies from './components/Genres/GenreMovies.tsx'
 
